@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MR3W3L SPORT - Premium Sports Merchandise</title>
+    <meta name="description" content="Discover premium sports jerseys and equipment from the world's top teams and brands" />
+    <meta name="author" content="MR3W3L SPORT" />
+    
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+
+    <meta property="og:title" content="MR3W3L SPORT - Premium Sports Merchandise" />
+    <meta property="og:description" content="Discover premium sports jerseys and equipment from the world's top teams and brands" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header" class="header-fixed">
+        <div class="header-container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo-section">
+                    <img 
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Sport_balls.svg/400px-Sport_balls.svg.png" 
+                        alt="MR3W3L SPORT" 
+                        class="logo-img"
+                    />
+                    <h1 class="logo-text">MR3W3L SPORT</h1>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <button class="nav-btn" data-section="foot">
+                        <span class="nav-icon">⚽</span>
+                        <span>Football</span>
+                    </button>
+                    <button class="nav-btn" data-section="basket">
+                        <span class="nav-icon">🏀</span>
+                        <span>Basketball</span>
+                    </button>
+                    <button class="nav-btn" data-section="rugby">
+                        <span class="nav-icon">🏈</span>
+                        <span>Rugby</span>
+                    </button>
+                    <button class="nav-btn" data-section="sport">
+                        <span class="nav-icon">🏃</span>
+                        <span>Sports Gear</span>
+                    </button>
+                </nav>
+
+                <!-- Cart Toggle & Mobile Menu -->
+                <div class="header-actions">
+                    <button id="cartToggle" class="cart-toggle-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span id="cartCount" class="cart-count">0</span>
+                    </button>
+                    <button id="mobileMenuToggle" class="mobile-menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <nav id="mobileNav" class="nav-mobile">
+                <button class="nav-btn-mobile" data-section="foot">
+                    <span class="nav-icon">⚽</span>
+                    <span>Football</span>
+                </button>
+                <button class="nav-btn-mobile" data-section="basket">
+                    <span class="nav-icon">🏀</span>
+                    <span>Basketball</span>
+                </button>
+                <button class="nav-btn-mobile" data-section="rugby">
+                    <span class="nav-icon">🏈</span>
+                    <span>Rugby</span>
+                </button>
+                <button class="nav-btn-mobile" data-section="sport">
+                    <span class="nav-icon">🏃</span>
+                    <span>Sports Gear</span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Gear Up for
+                <span class="hero-highlight">Victory</span>
+            </h1>
+            
+            <p class="hero-description">
+                Discover premium sports jerseys and equipment from the world's top teams and brands
+            </p>
+
+            <div class="hero-buttons">
+                <button id="exploreBtn" class="btn-primary">
+                    🏆 Explore Products
+                </button>
+                
+                <button class="btn-secondary">
+                    📱 Download App
+                </button>
+            </div>
+
+            <!-- Stats -->
+            <div class="hero-stats">
+                <div class="stat">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Products</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Teams</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">10k+</div>
+                    <div class="stat-label">Customers</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Collection</h2>
+                <p>Premium sports jerseys and gear from top brands</p>
+            </div>
+
+            <!-- Football Section -->
+            <div id="foot" class="category-section">
+                <h3 class="category-title football">⚽ Football</h3>
+                <div class="products-grid" data-category="Football"></div>
+            </div>
+
+            <!-- Basketball Section -->
+            <div id="basket" class="category-section">
+                <h3 class="category-title basketball">🏀 Basketball</h3>
+                <div class="products-grid" data-category="Basketball"></div>
+            </div>
+
+            <!-- Rugby Section -->
+            <div id="rugby" class="category-section">
+                <h3 class="category-title rugby">🏈 Rugby</h3>
+                <div class="products-grid" data-category="Rugby"></div>
+            </div>
+
+            <!-- Sports Gear Section -->
+            <div id="sport" class="category-section">
+                <h3 class="category-title sports-gear">🏃 Sports Gear</h3>
+                <div class="products-grid" data-category="Sports Gear"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shopping Cart Sidebar -->
+    <div id="shoppingCart" class="cart-sidebar">
+        <div class="cart-header">
+            <h2>🛒 Shopping Cart</h2>
+            <button id="cartClose" class="cart-close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <div class="cart-total">
+            Total: <span id="cartTotal">0</span> TND
+        </div>
+
+        <div id="cartItems" class="cart-items">
+            <div class="cart-empty">
+                <div class="empty-icon">🛍️</div>
+                <p>Your cart is empty</p>
+                <small>Add some amazing sports gear!</small>
+            </div>
+        </div>
+
+        <div id="cartActions" class="cart-actions">
+            <button class="btn-primary cart-checkout">
+                💳 Checkout
+            </button>
+            <button class="btn-secondary cart-save">
+                💾 Save for Later
+            </button>
+        </div>
+    </div>
+
+    <!-- Cart Overlay -->
+    <div id="cartOverlay" class="cart-overlay"></div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+        <div id="toastContent" class="toast-content"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
